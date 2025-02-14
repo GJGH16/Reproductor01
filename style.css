@@ -24,6 +24,34 @@ body {
 
 }
 
+.fondoPrincipal{
+
+    display: flex;
+}
+
+.cabezera{
+
+display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 33px;
+    border-radius: 14px;
+background-color: aqua;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .logo img{ 
     display: flex;
     width: 50px;
