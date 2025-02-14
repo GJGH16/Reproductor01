@@ -51,8 +51,9 @@ function CrearComponentCancion(song) {
 }
 
 
-console.log(
 
+
+document.getElementById('container').appendChild(
 
     CrearComponentCancion(cancion)
 

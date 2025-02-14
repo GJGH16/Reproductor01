@@ -27,23 +27,23 @@ body {
 .fondoPrincipal{
 
     display: flex;
+    flex-direction: row;
 }
 
 .cabezera{
 
     display: flex;
-
-    /*justify-content:;*/
     align-items:baseline;
     padding: 14px 33px;
     border-radius: 14px;
     background-color: aqua;
+    flex-direction: column;
 
 }
 
 
 .logo{
-    
+
     display: flex;
     align-items: center;
     justify-content: center;
@@ -53,6 +53,24 @@ body {
 
 }
 
+.jumbootron{
+
+    display: flex;
+    background-image:url(assets/Imagen1.png) ;
+    background-size: cover;
+    width: 100%;
+    height: 580px;
+    background-position: center;
+    justify-content: right;
+    align-items: baseline;
+
+}
+
+
+.texto-jumbo{
+
+    color: #FFFFFF;
+}
 
 
 .logo img{ 
