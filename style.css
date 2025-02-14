@@ -1,0 +1,104 @@
+* {
+
+    padding: unset;
+    margin: unset;
+    outline: unset;
+    border: unset;
+
+    /*propiedad magica*/
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+body {
+
+
+    color: #060707;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFFFF;
+
+
+
+}
+
+.logo img{ 
+    display: flex;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+.cancion1 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.cancion2 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.cancion3 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+.cancion4 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+.cancion5 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+
+
+.album1 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.album2 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.album3 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.album4 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.album5 img{
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
