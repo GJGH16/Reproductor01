@@ -31,63 +31,42 @@ body {
 
 .cabezera{
 
-display: flex;
+    display: flex;
 
-    justify-content: space-between;
-    align-items: center;
+    /*justify-content:;*/
+    align-items:baseline;
     padding: 14px 33px;
     border-radius: 14px;
-background-color: aqua;
+    background-color: aqua;
+
+}
+
+
+.logo{
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: blue;
+    gap: 5px;
+
 
 }
 
 
 
-
-
-
-
-
-
-
-
-
 .logo img{ 
+
     display: flex;
     width: 50px;
     height: 50px;
     object-fit: cover;
 
+    /*justify-content: center;*/
+
 }
 
-.cancion1 img{
-
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.cancion2 img{
-
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.cancion3 img{
-
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-}
-.cancion4 img{
-
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-    
-}
-.cancion5 img{
+.cancion img{
 
     width: 100px;
     height: 150px;
@@ -96,36 +75,7 @@ background-color: aqua;
 
 
 
-
-.album1 img{
-
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.album2 img{
-
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.album3 img{
-
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.album4 img{
-
-    width: 100px;
-    height: 150px;
-    object-fit: cover;
-}
-
-.album5 img{
+.album img{
 
     width: 100px;
     height: 150px;
