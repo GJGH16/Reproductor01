@@ -19,61 +19,169 @@ body {
     color: #060707;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #FFFFFF;
-
+    
 
 
 }
 
-.fondoPrincipal{
+main{
 
-    display: flex;
-    flex-direction: row;
+    padding: 20px;
 }
 
-.cabezera{
+.fondoPrincipal {
 
     display: flex;
-    align-items:baseline;
+
+    width: 100%;
+
+
+}
+
+.cabezera {
+
+    display: flex;
+    align-items: baseline;
     padding: 14px 33px;
     border-radius: 14px;
-    background-color: aqua;
+    width: 500px;
     flex-direction: column;
+    gap: 20px;
+
+
+}
+
+.fondocanciones {
+
+    background-color: #6B6B6B;
+    border-radius: 14px;
+    width: 350px;
+    height: 100%;
+    padding: 20px;
+    
 
 }
 
 
-.logo{
+
+.fondocanciones h1{
+
+    text-align: center;
+}
+
+.canciones{
+
+    display:flex ;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 40px;
+}
+
+
+.logo {
 
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: blue;
+    background-color: #FFFFFF;
     gap: 5px;
+    padding: 15px;
 
 
 }
 
-.jumbootron{
+.logo h1{
+
+font-size: 25px;
+font-weight: bold;
+
+}
+
+.jumbootron {
 
     display: flex;
-    background-image:url(assets/Imagen1.png) ;
+    background-image: url(assets/Imagen1.png);
     background-size: cover;
     width: 100%;
-    height: 580px;
+    height: 270px;
     background-position: center;
-    justify-content: right;
-    align-items: baseline;
+    color: #FFFFFF;
+    /* font-weight: bold;*/
+    font-size: 53px;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 14px;
 
 }
 
 
-.texto-jumbo{
+.texto-jumbo h2 {
 
     color: #FFFFFF;
+    font-size: 43px;
+    background-color: #0607075f;
+    border-radius: 14px;
+    /*width: 650px;*/
+    text-align: center;
 }
 
+.texto-jumbo {
 
-.logo img{ 
+    display: flex;
+    padding: auto;
+    width: 100%;
+}
+
+.caja-jumbo {
+
+
+    display: flex;
+    border-radius: 14px;
+    height: 40px;
+    width: 770px;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.caja {
+
+    background-color: #ffffffa8;
+    height: 40px;
+    width: 100%;
+    border-radius: 14px;
+    text-align: center;
+    color: #060707;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+}
+
+.caja-jumbo button {
+
+    display: flex;
+    justify-items: right;
+    align-items: center;
+    background-color: #1DC13B;
+    width: 95px;
+    height: 40px;
+    border-radius: 14px;
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF;
+
+
+}
+
+.logo img {
 
     display: flex;
     width: 50px;
@@ -84,7 +192,7 @@ body {
 
 }
 
-.cancion img{
+.cancion img {
 
     width: 100px;
     height: 150px;
@@ -93,9 +201,62 @@ body {
 
 
 
-.album img{
+.album img {
 
     width: 100px;
     height: 150px;
     object-fit: cover;
+}
+
+.titulolista {
+
+    display: flex;
+    background-color: #310ea5;
+    
+
+}
+
+.Recomienda h3 {
+
+    background-color: #6B6B6B;
+    width: 100%;
+    text-align: center;
+    border-radius: 14px;
+    height: 30px;
+
+}
+
+
+.albu {
+
+    background-color: #6B6B6B;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-radius: 14px;
+}
+
+
+
+
+.cuerpo {
+
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    padding: 10px;
+
+}
+
+
+.orden {
+
+    display: flex;
+    background-color: #1DC13B;
+    gap: 40px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+
 }
