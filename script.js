@@ -1,5 +1,5 @@
 
-
+/*
 const cancion = {
 
     _id: '1',
@@ -21,10 +21,42 @@ const cancion = {
         filename: '',
 
     }
-
-
-
 }
+
+
+
+*/
+
+axios.get("https://api.institutoalfa.org/api/songs")  // pedimos la informacion al servidor con axios 
+
+    .then(function (response) {
+
+        const canciones = response.data.songs  // guardamos la repuesta en una constante
+
+        console.log(response); // mostrar en consola
+
+        console.log(canciones);
+
+        //.map mapea, recorre o descompone las canciones
+        canciones.map(function (cancion) {
+            // lo que este aqui adentro se va a repetir en toda la lista
+            console.log(cancion.title)
+
+            document.getElementById("container").appendChild(
+
+                CrearComponentCancion(cancion)
+
+            )
+
+            document.getElementById("liscan").appendChild (
+
+
+                CrearComponentCancion(cancion)
+            )
+
+        })
+
+    })
 
 
 function CrearComponentCancion(song) {
@@ -33,17 +65,35 @@ function CrearComponentCancion(song) {
     div.setAttribute("class", "cancion")
 
     div.innerHTML = `
-    
-                    <img src="assets/microfono.jpg" alt="40px">
+             
+        <div> 
+                        
+        <img src="${song.image.url}" alt=""></div>
 
-                    <div>
+        <h2>${song.title}</h2>
+        <p>${song.author}</p>
 
-                        <h2>${song.title}</h2>
-                         <p>${song.author}</p>
-
-                    </div>
 
     `
+
+
+    div.addEventListener('click', function() {
+
+        console.log(song.title)
+        document.getElementById('audio')
+        .setAttribute('src', song.audio.url)
+
+        document.getElementById('foto')
+        .setAttribute('src', song.image.url)
+
+        document.getElementById('nombrec')
+        .innerHTML=song.title
+
+        document.getElementById('autor')
+        .innerHTML=song.author
+
+    })
+
 
     return div
 
@@ -52,9 +102,17 @@ function CrearComponentCancion(song) {
 
 
 
+const audio= document.getElementById('audio')
 
-document.getElementById("container").appendChild(
+document.getElementById('play-button').addEventListener('click', function() {
 
-    CrearComponentCancion(cancion)
+    if(audio.paused)  {
+        audio.play()
+    }
+    else{
+        audio.pause()
+    }
 
-)
+})
+
+

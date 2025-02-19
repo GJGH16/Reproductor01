@@ -6,6 +6,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+
     <title>Spotify</title>
 
     <meta name="keywords" content="musica, gratis, Spotify, canciones,
@@ -26,6 +29,8 @@
 </head>
 
 <body>
+
+    <audio src="" autoplay id="audio"></audio> 
 
     <div class="fondoPrincipal">
 
@@ -50,17 +55,7 @@
                     </div>
 
 
-                    <ul class="canciones">
-
-                        <li> cancion 1 </li>
-                        <li> cancion 2 </li>
-                        <li> Cancion 3</li>
-                        <li> cancion 4</li>
-                        <li> Cancion 5 </li>
-                        <li> cancion 6 </li>
-                        <li> cancion 7 </li>
-                        <li> cancion 8</li>
-                        <li> cancion 9</li>
+                    <div id="liscan">
 
 
 
@@ -105,10 +100,11 @@
 
                 </div>
 
+               
 
                 <div id="container">
 
-
+                  <!--
                     <div class="cancion">
 
                         <img src="assets/cancion.jpg" alt="">
@@ -174,7 +170,7 @@
 
                     </div>
 
-
+                    -->
 
                 </div> <!-- container -->
 
@@ -258,14 +254,14 @@
 
                 <div class="repro"> <!-- reproductor -->
 
-                    <div class="detallescancion">
+                    <div  class="detallescancion">
 
-                        <img src="assets/cancion.jpg" alt="">
+                        <img id='foto' src="assets/cancion.jpg" alt="">
 
                         <div class="nombrec">
 
-                            <h4>Nombre </h4>
-                            <h4> Autor </h4>
+                            <h4 id="nombrec"> Nombre </h4>
+                            <h4 id="autor"> Autor </h4>
 
                         </div>
 
@@ -277,7 +273,7 @@
 
                             <img src="assets/aleatorio.png" alt="">
                             <img src="assets/izquierda.png" alt="">
-                            <img src="assets/pausa.png" alt="">
+                            <img id='play-button' src="assets/pausa.png" alt="">
                             <img src="assets/derecha.png" alt="">
                             <img src="assets/repetir.png" alt="">
 
