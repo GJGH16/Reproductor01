@@ -29,12 +29,12 @@ const cancion = {
 
 function CrearComponentCancion(song) {
 
-    const div = document.createElement('div')
-    div.setAttribute('class', 'cancion')
+    const div = document.createElement("div")
+    div.setAttribute("class", "cancion")
 
     div.innerHTML = `
     
-                    <img src="assets/cancion.jpg" alt="40px">
+                    <img src="assets/microfono.jpg" alt="40px">
 
                     <div>
 
@@ -53,7 +53,7 @@ function CrearComponentCancion(song) {
 
 
 
-document.getElementById('container').appendChild(
+document.getElementById("container").appendChild(
 
     CrearComponentCancion(cancion)
 
