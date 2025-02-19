@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="es">
+<html prefix="og: https://ogp.me/ns#">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    
+
+    <title>Spotify</title>
+
+    <meta name="keywords" content="musica, gratis, Spotify, canciones,
+     canciones online, reproductor, reproducir, escuchar">
+
+
+
+
+    <meta name="description" content="Tu música, a tu manera. Disfruta de tus canciones favoritas con nuestro 
+     reproductor de música online. Crea playlists personalizadas, explora nuevas tendencias y sumérgete 
+     en la mejor experiencia musical.">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/assets/logo.png" type="image/x-icon">
+
+
+
+</head>
+
+<body>
+
+    <audio src="" autoplay id="audio"></audio> 
+
+    <div class="fondoPrincipal">
+
+        <div class="cabezera">
+
+            <header>
+
+                <div class="logo">
+
+                    <img src="assets/logo.png" alt="">
+
+                    <h1>Spotify </h1>
+
+
+                </div>
+                <div class="fondocanciones">
+
+                    <div class="tituloLista">
+
+                        <h1> Playlists</h1>
+
+                    </div>
+
+
+                    <div id="liscan">
+
+
+
+                    </ul>
+                </div>
+            </header>
+
+
+        </div>
+
+        <main>
+
+            <div class="jumbootron"> <!-- jumbotron -->
+
+                <div class="texto-jumbo">
+
+                    <h2>"El futuro de la música está aquí”
+                        Conéctate, Reproduce, Disfruta.</h2>
+
+                </div>
+
+                <div class="caja-jumbo">
+
+                    <div class="caja">
+
+                        <h5> ¿Qué buscas? </h5>
+
+                    </div>
+
+                    <button> Buscar </button>
+
+
+                </div>
+
+            </div> <!-- jumbotron -->
+
+            <div class="cuerpo">
+
+                <div class="Recomienda">
+
+                    <h3> Recomendaciones </h3>
+
+                </div>
+
+               
+
+                <div id="container">
+
+                  <!--
+                    <div class="cancion">
+
+                        <img src="assets/cancion.jpg" alt="">
+
+                        <div>
+
+                            <h2>cancion 1</h2>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="cancion">
+
+                        <img src="assets/cancion.jpg" alt="">
+
+                        <div>
+
+                            <h2>cancion 2</h2>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="cancion">
+
+                        <img src="assets/cancion.jpg" alt="">
+
+                        <div>
+
+                            <h2>cancion 3</h2>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="cancion">
+
+                        <img src="assets/cancion.jpg" alt="">
+
+                        <div>
+
+                            <h2>cancion 4</h2>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="cancion">
+
+                        <img src="assets/cancion.jpg" alt="">
+
+                        <div>
+
+                            <h2>cancion 5</h2>
+
+
+                        </div>
+
+                    </div>
+
+                    -->
+
+                </div> <!-- container -->
+
+
+
+
+                <div class="albu">
+
+                    <h3> Albunes </h3>
+
+                </div>
+
+
+                <div class="ordenalbum">
+
+                    <div class="album">
+                        <img src="assets/microfono.jpg" alt="40px">
+
+                        <div>
+
+                            <h2>album 1</h2>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="album">
+                        <img src="assets/microfono.jpg" alt="40px">
+
+                        <div>
+
+                            <h2>album 2</h2>
+
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="album">
+
+                        <img src="assets/microfono.jpg" alt="40px">
+
+                        <div>
+
+                            <h2>Album 3</h2>
+
+
+                        </div>
+
+                    </div>
+
+                    <div class="album">
+                        <img src="assets/microfono.jpg" alt="40px">
+
+                        <div>
+
+                            <h2>Album 4</h2>
+
+
+                        </div>
+
+
+                    </div>
+
+                    <div class="album">
+
+                        <img src="assets/microfono.jpg" alt="40px">
+
+                        <div>
+
+                            <h2>Album 5</h2>
+
+
+                        </div>
+
+                    </div>
+
+                </div> <!-- orden album -->
+
+                <div class="repro"> <!-- reproductor -->
+
+                    <div  class="detallescancion">
+
+                        <img id='foto' src="assets/cancion.jpg" alt="">
+
+                        <div class="nombrec">
+
+                            <h4 id="nombrec"> Nombre </h4>
+                            <h4 id="autor"> Autor </h4>
+
+                        </div>
+
+                    </div> <!-- detalles cancion -->
+
+                    <div class="tiempo">
+
+                        <div class="iconos">
+
+                            <img src="assets/aleatorio.png" alt="">
+                            <img src="assets/izquierda.png" alt="">
+                            <img id='play-button' src="assets/pausa.png" alt="">
+                            <img src="assets/derecha.png" alt="">
+                            <img src="assets/repetir.png" alt="">
+
+                        </div>
+
+                        <div class="barra">
+
+                            <h1>1:29</h1>
+
+                            <div class="barracolor">
+                              
+                               
+
+                                <div class="color1">
+                                    
+                                </div>
+
+                            </div>
+
+                            <h1>4:24</h1>
+
+                        </div>
+
+                    </div><!-- tiempo cancion -->
+
+                    <div class="volumen">
+
+                        <div class="iconovol">
+
+                            <img src="assets/volumen.png" alt="">
+
+                        </div>
+
+                        <h3> - </h3>
+
+                        <div class="barravol">
+
+                            <div class="colorvol">
+
+
+
+                            </div>
+
+                        </div>
+
+                        <h3> + </h3>
+
+                    </div> <!-- volumen -->
+
+
+                </div> <!-- reproductor -->
+
+            </div> <!-- cuerpo -->
+
+
+
+    </div> <!-- fondoPrincipal -->
+
+
+
+    </main>
+
+
+    </div>
+    <script src="script.js"></script>
+
+
+</body>
+
+</html>

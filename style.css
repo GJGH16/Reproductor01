@@ -1,0 +1,469 @@
+* {
+
+    padding: unset;
+    margin: unset;
+    outline: unset;
+    border: unset;
+
+    /*propiedad magica*/
+    box-sizing: border-box;
+
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+body {
+
+    color: #060707;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #FFFFFF;
+
+
+}
+
+main {
+
+    padding: 15px;
+}
+
+.fondoPrincipal {
+
+    display: flex;
+    width: 100%;
+
+}
+
+.cabezera {
+
+    display: flex;
+    align-items: baseline;
+    padding: 14px 33px;
+    border-radius: 14px;
+    width: 430px;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.fondocanciones {
+
+    background-color: #ACACAC;
+    border-radius: 14px;
+    width: 350px;
+    height: 100%;
+    padding: 20px;
+
+}
+
+.fondocanciones img{
+
+width: 10px;
+height: 10px;
+
+}
+
+#liscan{
+
+display: flex;
+flex-direction: column;
+
+}
+
+#liscan .cancion {
+    display: flex;
+    align-items: center;
+}
+#liscan img {
+
+    width: 40px;
+    height: 40px;
+ 
+}
+.fondocanciones h1 {
+
+    text-align: center;
+}
+
+.canciones {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 40px;
+}
+
+
+.logo {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    gap: 5px;
+    padding: 15px;
+
+}
+
+.logo h1 {
+
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.jumbootron {
+
+    display: flex;
+    background-image: url(assets/Imagen1.png);
+    background-size: cover;
+    width: 100%;
+    height: 270px;
+    background-position: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    border-radius: 14px;
+
+}
+
+
+.texto-jumbo h2 {
+
+    color: #FFFFFF;
+    font-size: 43px;
+    background-color: #0607075f;
+    border-radius: 14px;
+    width: 650px;
+    
+}
+
+.texto-jumbo {
+
+    display: flex;
+    padding: auto;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.caja-jumbo {
+
+
+    display: flex;
+    border-radius: 14px;
+    height: 40px;
+    width: 770px;
+    flex-direction: row;
+    justify-content: right;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+.caja {
+
+    background-color: #ffffffa8;
+    height: 40px;
+    width: 100%;
+    border-radius: 14px;
+    text-align: center;
+    color: #060707;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 10px;
+
+}
+
+.caja-jumbo button {
+
+    display: flex;
+    justify-items: right;
+    align-items: center;
+    background-color: #1DC13B;
+    width: 95px;
+    height: 40px;
+    border-radius: 14px;
+    text-align: center;
+    padding: 20px;
+    color: #FFFFFF;
+
+}
+
+.logo img {
+
+    display: flex;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+.cancion img {
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+
+.album img {
+
+    width: 100px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.titulolista {
+
+    display: flex;
+    background-color: #310ea5;
+
+}
+
+.Recomienda h3 {
+
+    background-color: #ACACAC;
+    width: 100%;
+    text-align: center;
+    border-radius: 14px;
+    height: 30px;
+
+}
+
+.albu {
+
+    background-color: #ACACAC;
+    width: 100%;
+    height: 30px;
+    text-align: center;
+    border-radius: 14px;
+
+}
+
+
+.cuerpo {
+
+    display: flex;
+    gap: 25px;
+    flex-direction: column;
+    padding: 15px 0px;
+
+
+}
+
+
+#container {
+
+    display: flex;
+    background-color: #FFFFFF;
+    gap: 40px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-content: center ;
+    text-align: center;
+
+}
+
+#container img {
+
+    width: 110px;
+    height: 120px;
+    border-radius: 20px;
+
+}
+
+#container h2{
+
+width: 80px;
+display: flex;
+flex-wrap: wrap;
+font-size: 13px;
+text-align: center;
+
+}
+
+.ordenalbum {
+
+    display: flex;
+    background-color: #FFFFFF;
+    gap: 40px;
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.ordenalbum img {
+
+    border-radius: 75px;
+    object-fit: cover;
+    width: auto;
+    height: 150px;
+}
+
+.repro {
+
+    display: flex;
+    background-color: #ACACAC;
+    flex-direction: row;
+    gap: 100px;
+    border-radius: 14px;
+    padding: 20px;
+    width: 100%;
+    height: 150px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.detallescancion {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.detallescancion img {
+
+    display: flex;
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+
+}
+
+.tiempo {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.iconos {
+
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+
+}
+
+.iconos img {
+
+    width: 35px;
+    height: 35px;
+
+}
+
+.barra {
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 500px;
+    height: 30px;
+    gap: 20px;
+
+}
+
+.barracolor {
+
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    width: 500px;
+    height: 10px;
+
+}
+
+.color1 {
+
+    background-color: #1DC13B;
+    width: 100px;
+    height: 10px;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.volumen {
+
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.barravol {
+
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    width: 100px;
+    height: 10px;
+
+}
+
+.colorvol {
+
+    background-color: #1DC13B;
+    width: 50px;
+    height: 10px;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.cancion h2{
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.cancion p {
+
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    font-size: 10px;
+    font-weight: bold;
+
+}
+
+#nombrec{
+
+    font-size: 15px;
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+
+}
+
+#autor{
+
+    font-size: 10px;
+    display: flex;
+    justify-content: left;
+
+}
