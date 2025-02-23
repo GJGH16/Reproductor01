@@ -24,7 +24,7 @@ body {
 
 main {
 
-    padding: 15px;
+    padding: 20px;
 }
 
 .fondoPrincipal {
@@ -48,51 +48,51 @@ main {
 
 .fondocanciones {
 
+    display: flex;
     background-color: #ACACAC;
     border-radius: 14px;
     width: 350px;
     height: 100%;
     padding: 20px;
+    flex-direction: column;
+    gap: 30px;
 
-}
-
-.fondocanciones img{
-
-width: 10px;
-height: 10px;
-
-}
+} 
 
 #liscan{
 
 display: flex;
 flex-direction: column;
+gap: 15px;
 
 }
 
-#liscan .cancion {
+#liscan .lista {
+
     display: flex;
     align-items: center;
+    justify-content:left;
+    flex-direction: row;
+    gap: 20px;
+    padding: 10px;
 }
+
+#liscan .lista p{
+
+    font-weight: bold;
+}
+
 #liscan img {
 
-    width: 40px;
-    height: 40px;
+    width: 60px;
+    height: 60px;
  
 }
 .fondocanciones h1 {
 
     text-align: center;
-}
-
-.canciones {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 45px;
-    padding: 40px;
+    font-size: 25px;
+    font-weight: bold;
 }
 
 
@@ -234,6 +234,9 @@ flex-direction: column;
     text-align: center;
     border-radius: 14px;
     height: 30px;
+    font-weight: bold;
+    font-size: 20px;
+
 
 }
 
@@ -247,6 +250,13 @@ flex-direction: column;
 
 }
 
+.albu h3{
+
+ font-weight: bold;
+ font-size: 20px;
+
+}
+
 
 .cuerpo {
 
@@ -254,7 +264,6 @@ flex-direction: column;
     gap: 25px;
     flex-direction: column;
     padding: 15px 0px;
-
 
 }
 
@@ -269,25 +278,33 @@ flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     justify-content: center ;
-    text-align: center;
+    
+    padding: 30px;
 
 }
 
 #container img {
 
-    width: 110px;
-    height: 120px;
+    width: 140px;
+    height: 130px;
     border-radius: 20px;
 
 }
 
-#container h2{
+.suge h2{
 
-width: 80px;
-display: flex;
-flex-wrap: wrap;
-font-size: 13px;
-text-align: center;
+    display: flex;
+    width: 140px;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.suge p {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -301,6 +318,8 @@ text-align: center;
     flex-wrap: wrap;
     justify-content: center;
     text-align: center;
+    padding-block-end: 80px;
+    padding-top: 30px;
 
 }
 
@@ -324,7 +343,6 @@ text-align: center;
     height: 150px;
     justify-content: center;
     align-items: center;
-
 }
 
 
