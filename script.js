@@ -1,4 +1,5 @@
 
+
 /*
 const cancion = {
 
@@ -36,6 +37,9 @@ axios.get("https://api.institutoalfa.org/api/songs")  // pedimos la informacion 
         const canciones = response.data.songs  // guardamos la repuesta en una constante
 
         const numeros = canciones.slice(5, 11) // Eligo el rango de los resultados
+
+        const albu = canciones.slice(11,16) // eligo los albunes a mostrar
+
         console.log(numeros)
 
         numeros.map(function (sugerencia) {
@@ -69,6 +73,21 @@ axios.get("https://api.institutoalfa.org/api/songs")  // pedimos la informacion 
 
         })
 
+
+
+        albu.map(function (album1) {
+
+
+            document.getElementById("album1").appendChild(
+
+                album34(album1)
+
+            )
+            
+            
+            
+        })
+
     })
 
 
@@ -87,7 +106,6 @@ function CrearComponentCancion(song) {
 
             <h2>${song.title}</h2>
             <p>${song.author}</p>
-
 
             `
 
@@ -162,15 +180,67 @@ function CrearComponentCancion2(song) {
 }
 
 
+
+
+
+function album34(song) {
+
+    const div = document.createElement("div")
+    div.setAttribute("class", "ordenalbum")
+
+
+    div.innerHTML = `
+             
+        <div> 
+                        
+        <img src="${song.image.url}" alt=""></div>
+
+        <div> 
+
+        <h2>${song.album}</h2>
+        
+
+       </div>
+    `
+
+
+    div.addEventListener('click', function () {
+
+        console.log(song.title)
+        document.getElementById('audio')
+            .setAttribute('src', song.audio.url)
+
+        document.getElementById('foto')
+            .setAttribute('src', song.image.url)
+
+        document.getElementById('nombrec')
+            .innerHTML = song.title
+
+        document.getElementById('autor')
+            .innerHTML = song.author
+
+        
+    })
+
+
+    return div
+
+
+}
+
+
+
 const audio = document.getElementById('audio')
 
 document.getElementById('play-button').addEventListener('click', function () {
 
     if (audio.paused) {
         audio.play()
+
     }
     else {
         audio.pause()
+
     }
 
 })
